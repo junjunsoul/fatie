@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
+        <meta name="format-detection" content="telephone=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <script>
+            (function() {
+                var html = document.documentElement;
+                var windowWidth = html.clientWidth;
+                html.style.fontSize = windowWidth / 6.4 + 'px';
+                var dpr = window.devicePixelRatio;
+                if (dpr >= 1.5) {
+                    dpr = 2;
+                }
+                html.setAttribute('data-dpr', dpr);
+            })();
+        </script>
+        <title>发帖子</title>
+        <link href="thirdapp/forum/main.min.css?1474455855545" rel="stylesheet">
+        <script>
+            var Tribe = {
+                domain: 'https://shequ.yunzhijia.com',
+                currentUrl: '',
+                networkId: '574be974e4b088ada7cdabe7',
+                userId: '000000000000000000000001',
+                creatorId: ''
+            };
+        </script>
+    </head>
+    <body>
+        <style>
+            body {
+                background: #fff;
+            }
+        </style>
+        <div id="editorWrap" data-source="undefined" class="upload-albums">
+            <div class="j-buyersShowPageChosenItem"></div>
+            <div class="mar-10">
+                <textarea id="editor" placeholder="写几句准备发帖子啦......" data-type="" data-topicid="" data-isBuyersShow="" maxLength="1000" class="pic-ta"></textarea>
+            </div>
+            <div class="select-site show show-curr none">
+                <a class="site-btn">
+                    <i class="site-show"></i>
+                    <span data-latitude="-1" data-longitude="-1" class="site-name ellipsis">点击开启定位</span>
+                    <span class="site-close"></span>
+                </a>
+            </div>
+            <div class="j-call-free select-site show-curr"></div>
+            <div class="select-send">
+                <div class="editorCtrl">
+                    <ul class="post-func-area">
+                        <li class="curr">
+                            <a href="javascript:;" class="msg-btn"></a>
+                        </li>
+                        <li class="tsf">
+                            <a href="javascript:;" class="phiz-btn"></a>
+                        </li>
+                        <li>
+                            <a href="javascript:;" class="aite-btn"></a>
+                        </li>
+                        <li>
+                            <a href="javascript:;" class="video-btn"></a>
+                        </li>
+                    </ul>
+                    <span id="sendMsg" 
+                    data-networkid="574be974e4b088ada7cdabe7" 
+                    data-blueprintId="" 
+                    data-fileids="" 
+                    data-appid="wx2e3a5e6cc663183a" 
+                    data-timestamp="1474855100" 
+                    data-noncestr="XdQMhE" 
+                    data-signature="168b0dc727d099f003baa23146f62f293bc40eb3" 
+                    data-isAdmin="undefined" 
+                    data-wx-aite="" 
+                    data-yzj-aite=""
+                    class="btn bg-gray send-ft">发送</span>
+                </div>
+            </div>
+            <div style="display:none;" class="upload-box">
+                <div class="upload-box-container">
+                    <div id="add" class="join_pic">
+                        <input accept="image/jpg, image/jpeg, image/png, image/gif" type="file" class="fileImage fileimg">
+                    </div>
+                </div>
+            </div>
+            <div id="uploadInf" class="upload_inf"></div>
+        <script src="https://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+        <script src="thirdapp/forum/js/lib/public/zepto.min.js"></script>
+        <script src="thirdapp/forum/js/lib/public/underscore-min.js"></script>
+        <script src="thirdapp/forum/js/lib/public/iscroll.js"></script>
+        <script src="pub/js/qingjs.js"></script>
+        <script src="thirdapp/forum/js/export/util.min.js?1474455855542"></script>
+        <script src="thirdapp/forum/js/lib/public/lazyload.min.js"></script>
+        <script src="thirdapp/forum/js/export/uploadPic.min.js?1474455855542"></script>
+    </body>
+</html>
