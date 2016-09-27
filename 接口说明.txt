@@ -1,0 +1,44 @@
+﻿
+图片上传----------
+type:POST
+upload?ownerId=1212
+保存文件路径 /filesvr
+
+保存成功后返回文件名
+
+
+获取艾特用户-----------
+type:GET
+recentContacts?userId=12121
+
+返回数据格式
+[
+	{"id": "1", "name": "三金", "avatarUrl": ""},
+	{"id": "2", "name": "啊记", "avatarUrl": ""},
+	{"id": "3", "name": "狗币", "avatarUrl": ""}
+]
+
+
+视频上传----------
+type:POST
+analyzeUrl?url=''
+
+返回数据格式
+{success:true,message:''}
+
+
+发帖操作----------
+type:POST
+提交地址 sendMsg
+
+提交数据格式
+{
+	userId:用户名,
+	content:#null#[哈哈]sdfsdfsdf //内容，
+	location:广州市天河区 //地理位置，
+	fileids:[{"userId":"123456","fileIds":["111.jpeg"]}] //上传文件
+}
+返回数据格式
+{success:true}
+
+
