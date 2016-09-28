@@ -318,7 +318,8 @@ textarea.cmt-input {
 }
 
 .editorCtrl {
-    width: 100%
+    width: 100%;
+    overflow: hidden;
 }
 
 .qr-title,.smiley li,.video-content {
@@ -1097,7 +1098,6 @@ html[data-dpr="2"] .border-t:before {
     display: block;
     font-size: 1.0625em;
     padding: .08rem 0;
-    border-radius: 5px;
     border: none
 }
 
@@ -2366,9 +2366,8 @@ a.showSendMsg {
 }
 
 .select-send {
-    padding: 5px 17px 3px;
-    border-top: 1px solid #e9e9e9;
-    border-bottom: 1px solid #e9e9e9;
+    border-top: 1px solid hsla(133,43%,40%,0.9);
+    border-bottom: 1px solid hsla(133,43%,40%,0.9);
     background: #fff
 }
 
@@ -2569,12 +2568,13 @@ a.showSendMsg {
 }
 
 .post-func-area {
-    float: left
+    float: left;
+    padding: 2px 17px;
 }
 
 .post-func-area li {
     float: left;
-    margin: .05rem .2rem 0 0;
+    margin: .05rem .1rem 0;
     vertical-align: middle
 }
 
@@ -2599,24 +2599,8 @@ a.showSendMsg {
 }
 
 .aite-btn,.msg-btn,.phiz-btn,.video-btn {
-    width: .42rem;
-    height: .42rem
-}
-
-.aite-btn {
-    background: url(img/at.png?1474455853818) no-repeat
-}
-
-.phiz-btn {
-    background: url(img/smile.png?1474455853818) no-repeat
-}
-
-.video-btn {
-    background: url(img/video.png?1474455853818) no-repeat
-}
-
-.msg-btn {
-    background: url(img/pic.png?1474455853818) no-repeat
+    font-size: 28px;
+    color: hsla(129,8%,53%,0.8);
 }
 
 .phone-btn {
@@ -2641,23 +2625,8 @@ a.showSendMsg {
 .post-func-area li.curr .topic-btn,.post-func-area li.curr .topic-btn-item {
     background-image: url(img/topic.png?1474455853818)
 }
-
-.post-func-area li.curr .aite-btn {
-    background-image: url(img/at_hover.png?1474455853818)
-}
-
-.post-func-area li.curr .video-btn {
-    background-image: url(img/video_hover.png?1474455853818)
-}
-
-.post-func-area li.curr.tsf .phiz-btn {
-    background-image: url(img/smile_hover.png?1474455853818);
-    width: .42rem;
-    height: .42rem
-}
-
-.post-func-area li.curr .msg-btn {
-    background-image: url(img/pic_hover.png?1474455853818)
+.post-func-area li.curr a{
+    color: hsla(129,8%,45%,1);
 }
 
 .post-func-area li.curr .phone-btn {
@@ -2978,7 +2947,6 @@ a.i-kown {
     width: 50px;
     height: 50px;
     opacity: 0;
-    background: url(about:_blank)
 }
 
 .green {
@@ -3002,8 +2970,8 @@ a.i-kown {
 }
 
 .bg-gray {
-    background-color: #e9ecf1;
-    color: #bdbdbd
+    background-color: hsla(133,43%,40%,0.9);
+    color: #f3f0f0
 }
 
 .pointTips span {
@@ -3662,7 +3630,7 @@ html {
 }
 
 .editorCtrl .send-ft {
-    padding: 7px 15px
+    padding: 11px 15px
 }
 
 .personal-related-statistics {
@@ -6708,7 +6676,7 @@ a.yz-abslink3:before {
 }
 
 .video-linkadd {
-    border: 1px solid #dce1e8;
+    border: 1px solid hsla(129,8%,53%,1);
     height: 32px
 }
 
@@ -6718,13 +6686,12 @@ a.yz-abslink3:before {
 
 .video-addr {
     width: 70%;
-    height: 30px;
     background: #fff;
     border: none;
     padding-left: 10px;
     float: left;
     font-size: 14px;
-    line-height: 32px
+    line-height: 30px
 }
 
 .point-Rule,.video-ly {
@@ -6735,7 +6702,7 @@ a.yz-abslink3:before {
     width: 26%;
     border: none;
     height: 32px;
-    background: #fdb933;
+    background: hsla(129,8%,53%,1);
     float: right;
     font-size: 14px;
     color: #fff

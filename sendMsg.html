@@ -20,7 +20,10 @@
             })();
         </script>
         <title>发帖子</title>
-        <link href="thirdapp/forum/main.min.css?1474455855545" rel="stylesheet">
+
+        <link href="thirdapp/forum/css/font-awesome.min.css" rel="stylesheet">        
+        <link href="thirdapp/forum/main.min.css" rel="stylesheet">
+
         <script>
             var Tribe = {
                 userId: '123456',
@@ -37,7 +40,7 @@
         <div id="editorWrap" data-source="undefined" class="upload-albums">
             <div class="j-buyersShowPageChosenItem"></div>
             <div class="mar-10">
-                <textarea id="editor" placeholder="写几句准备发帖子啦......" maxLength="1000" class="pic-ta"></textarea>
+                <textarea id="editor" placeholder="有什么就说吧......" maxLength="1000" class="pic-ta"></textarea>
             </div>
             <div class="select-site show show-curr none">
                 <a class="site-btn">
@@ -51,16 +54,16 @@
                 <div class="editorCtrl">
                     <ul class="post-func-area">
                         <li class="curr">
-                            <a href="javascript:;" class="msg-btn"></a>
+                            <a href="javascript:;" class="msg-btn fa fa-picture-o"></a>
                         </li>
                         <li class="tsf">
-                            <a href="javascript:;" class="phiz-btn"></a>
+                            <a href="javascript:;" class="phiz-btn fa fa-smile-o"></a>
                         </li>
                         <li>
-                            <a href="javascript:;" class="aite-btn"></a>
+                            <a href="javascript:;" class="aite-btn fa fa-at"></a>
                         </li>
                         <li>
-                            <a href="javascript:;" class="video-btn"></a>
+                            <a href="javascript:;" class="video-btn fa fa-video-camera"></a>
                         </li>
                     </ul>
                     <span id="sendMsg" 
@@ -69,7 +72,7 @@
                     data-timestamp="" 
                     data-noncestr="" 
                     data-signature="" 
-                    class="btn bg-gray send-ft">发送</span>
+                    class="btn bg-gray send-ft">提交</span>
                 </div>
             </div>
             <div style="display:none;" class="upload-box">
