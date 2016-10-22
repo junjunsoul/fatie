@@ -2255,7 +2255,11 @@ a.showSendMsg {
     height: 160px;
     display: block;
     font-size: 15px;
-    border: none
+    border: none;
+    outline: 0px;
+    margin: 0;
+    padding: 0;
+    -webkit-user-select: auto
 }
 
 .select-file {
